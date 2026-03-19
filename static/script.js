@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const overlay = document.querySelector('.overlay');
     
     // Cancion
-    const audio = new Audio('/music/DarkBeach.mp3'); 
+    const audio = new Audio('/to-lilith/music/DarkBeach.mp3'); 
 
     boton.addEventListener('click', () => {
         audio.play().catch(error => {
