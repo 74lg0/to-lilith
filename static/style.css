@@ -1,0 +1,165 @@
+/* Importamos una fuente bien bonita */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+html {
+    background-color: #000000;
+}
+
+body {
+    padding-top: 8vh;
+    margin-top: 0;
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/img/dark-beach.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+.cancion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.cancion img {
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(102, 31, 235, 0.6);
+}
+
+.cancion p {
+    color: #81D4FA;
+    font-family: sans-serif;
+    margin-top: 15px;
+    font-size: 1.2rem;
+}
+
+/* Dedicatorio */
+.text {
+    text-align: center;
+    color: #81D4FA;
+    font-size: large;
+    border: 1px solid rgba(129, 212, 250, 0.3);
+    border-radius: 8px;
+    padding: 12px;
+    display: block;
+    margin: 0 auto;
+    width: 500px;
+    /* Desenfoque */
+    background-color: rgba(45, 20, 86, 0.5); 
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.text {
+    color: #81D4FA;
+    font-family: 'Josefin Sans';
+    font-optical-sizing: auto;
+    text-shadow: 0 0 5px rgba(129, 212, 250, 0.4);
+    background: linear-gradient(50deg, #81D4FA, #9FA8DA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 500;
+}
+
+/* Atentamente: 74lg0 */
+#auth {
+    display: block;
+    text-align: left;
+    margin-top: 20px;
+    
+    /* Fuente */
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #B39DDB;
+    opacity: 1;
+    text-transform: lowercase;
+    
+    /* Añadir líneas */
+    border-top: 1px solid rgba(129, 212, 250, 0.5);
+    border-bottom: 1px solid rgba(129, 212, 250, 0.5);
+    padding: 5px 0;
+    width: fit-content;
+    margin-left: 0;
+}
+
+#music-dedication {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    
+    margin: 0 auto;
+    max-width: fit-content;
+    padding: 30px;
+
+    /* Fuente */
+    font-family: 'Quicksand', sans-serif;
+    font-style: italic;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-align: center;
+    
+    /* Colores */
+    color: #E1F5FE;
+    text-shadow: 0 0 8px rgba(102, 31, 235, 0.5);
+}
+
+/* Rosas */
+#music-dedication::before,
+#music-dedication::after {
+    content: "🌹";
+    font-size: 1.6rem;
+    font-style: normal;
+    flex-shrink: 0;
+}
+
+/* Antes de terminar la web, comentamos esto para evitar repetir lo del boton */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 1.5s ease, visibility 1.5s;
+    pointer-events: all;
+}
+
+#button-principal {
+    background-color: #661feb;
+    color: #81D4FA;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+#button-principal:hover {
+    background-color: #3b1a79;
+    color: #4FC3F7;
+}
